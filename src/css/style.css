@@ -1,0 +1,431 @@
+
+
+body{
+	font-family: Arial, sans-serif;
+
+}
+
+nav{
+	width: 100%;
+	height: 60px;
+	background: #344051;
+
+}
+
+.logo{
+	color: #fff;
+	font-size: 28px;
+	line-height: 60px;
+	padding-left: 330px;
+	float: left;
+
+}
+
+.menu{
+	float: left;
+	padding-left: 300px;
+
+}
+
+.menu li{
+	float: left;
+	line-height: 60px;
+	color: #fff;
+	margin-right: 40px;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.main{
+	width: 100%;
+	height: calc(100% - 60px);
+	background: url(../img/boy.png) 90% 100%/auto 85% no-repeat, url(../img/bg.jpg) center/cover no-repeat;
+}
+
+.title_container{
+	float: left;
+	margin: 250px 0px 0px 300px;
+	color: #2c384a;
+	text-align: center;
+}
+
+.title_container h1{
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.title_container h4{
+	margin-top: 40px;
+	font-size: 22px;
+	color: #79818d; 
+}
+
+.title_container input{
+	height: 40px;
+	text-align: center;
+	border: 2px solid #6d7682;
+	background: none;
+	border-radius: 5px;
+	color: #6d7682;
+	font-size: 13px;
+	padding: 0px 16px;
+	margin: 50px 14px 0px 14px;
+}
+
+.chapter1{
+	float: left;
+	width: 100%;
+	height: 80%;
+	background: url(../img/man.png) 50% 30%/auto 30% no-repeat local ;
+}
+
+.chapter1 h2{
+	float: left;
+	color: #263244;
+	font-size: 25px;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 60px 690px;
+}
+
+.chapter1_container{
+	float: left;
+	color: #3f495a;
+	width: 760px;
+	height: 470px;
+	margin-left: 370px;
+
+}
+
+.paragraph{
+	margin: 180px 100px;
+	margin-bottom: 10px;
+
+}
+
+
+
+.download input{
+	height: 40px;
+	text-align: center;
+	border: 2px solid #3f495a;
+	background: none;
+	border-radius: 10px;
+	color: #6d7682;
+	margin: 20px 300px;
+}
+
+.chapter2{
+	float: left;
+	width: 100%;
+	height: 70%;
+	background: url(../img/bg2.jpg) center/cover no-repeat;
+}
+
+.chapter2 h2{
+	float: left;
+	color: #263244;
+	font-size: 25px;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 60px 660px;
+}
+
+.chapter2_container{
+	float: left;
+	height: 184px;
+	margin: 65px 19%;
+
+}
+
+.block{
+	float: left;
+	line-height: 16px;
+	font-size: 12px;
+	color: #263244;
+	margin-right: 10px;
+	width: 220px;
+	text-align: center;
+
+}
+
+.block h3{
+	font-size: 15px;
+	padding-top: 5px;
+	font-weight: bold;
+	letter-spacing: 0.5px;
+	color: #d89558;
+}
+
+.block p{
+	padding-top: 5px;
+}
+
+.chapter3{
+	float: left;
+	width: 100%;
+	height: 125%;
+
+}
+
+.chapter3 h2{
+	float: left;
+	color: #263244;
+	font-size: 25px;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 60px 700px;
+}
+
+.chapter3_container p{
+	float: left;
+	color: #3f495a;
+	margin-left: 370px;
+	margin-top: 5px;
+}
+
+.chapter3_container img{
+	float: left;
+	margin: 20px 270px;
+	height: 500px;
+}
+
+.block1{
+	float: left;
+	color: #263244;
+	width: 20%;
+	margin-left: 20px; 
+
+}
+
+.block2{
+	float: left;
+	color: #263244;
+	width: 60%;
+}
+
+.chapter3_container input{
+	float: left;
+	margin: 10px 370px;
+	background-color: #63b5ae;
+	font-size: 20px;
+	width: 170px;
+	border: 0px;
+	color: #ffffff;
+}
+.chapter4{
+	float: left;
+	width: 100%;
+	height: 80%; 
+}
+.chapter4 h2{
+	float: left;
+	color: #1c2534;
+	margin: 50px 660px;
+	font-size: 22px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.chapter4_container{
+	float: left;
+	margin: 10px 500px;
+
+
+}	
+
+.calc h3{
+	font-size: 22px;
+	font-weight: 500;
+	color: #1c2534;
+	padding-bottom: 8px;
+	padding-top: 20px;
+	letter-spacing: 1px;
+
+}
+select{
+	font-size: 13px;
+	color: #737373;
+	width: 500px;
+	height: 40px;
+	background-color: #eeeeee;
+	padding: 10px;
+
+}
+
+ .bottom p{
+	margin-top: 30px;
+	padding: 10px 0px;
+	font-size: 15px;
+	font-weight: bold;
+
+}
+
+.chapter5{
+	float: left;
+	width: 100%;
+	height: 70%;
+	background: url(../img/bg3.jpg) center/cover no-repeat;
+	margin-top: 70px;
+}
+.chapter5 h2{
+	float: left;
+	color: #263244;
+	font-size: 25px;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 60px 600px;
+}
+
+.chapter5_container{
+	float: left;
+	height: 184px;
+	margin: 45px 19%;
+
+}
+
+.chapter5_block{
+	float: left;
+	font-size: 17px;
+	color: #263244;
+	margin-right: 10px;
+	width: 220px;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 15px;
+	font-weight: 520;
+	letter-spacing: 0.5px;
+}
+.chapter5_block li{
+	padding-top: 10px;
+}
+.number{
+	font-size: 30px;
+	padding-top: 30px;
+}
+
+.chapter6{
+	float: left;
+	width: 100%;
+	height: 70%;
+}
+.chapter6 h2{
+	float: left;
+	color: #263244;
+	font-size: 25px;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 60px 700px;
+}
+
+.chapter6_container{
+	float: left;
+	margin: 20px 500px;
+	text-align: center;
+	color: #263244;
+}
+
+img{
+	padding-bottom: 30px;
+}
+	
+.chapter7{
+	float: left;
+	width: 100%;
+	height: 100%;
+	background: url(../img/bg4.jpg) center/cover no-repeat;
+}
+
+
+.chapter7 h2{
+	float: left;
+	color: #ffffff;
+	font-size: 25px;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 60px 650px;
+}
+
+.chapter7_container{
+	float: left;
+	margin: 10px 390px;
+	text-align: center;
+	color: #ffffff;
+}
+
+.chapter7_block{
+	float: left;
+	line-height: 16px;
+	font-size: 12px;
+	color: #ffffff;
+	width: 210px;
+	text-align: center;
+	padding: 40px;
+	margin-left: 20px;
+
+}
+
+.block_message{
+	float: left;
+	text-align: center;
+	margin: 0px 170px;
+}
+
+input{
+	float: left;
+	background-color: #d2d6dc;
+	border-radius: 0px;
+	margin-top: 5px;
+	width: 170px;
+}
+
+.inp{
+	display: inline-flex;
+	padding-top: 5px;
+}
+
+textarea{
+	float: left;
+	background-color: #d2d6dc;
+	height: 100px;
+	width: 400px;
+	margin-top: 5px;
+
+}
+
+.inp1{
+	margin: 0px;
+	margin-left: 108px;
+}
+
+.inp1 input{
+	background-color: rgba(255, 14, 172, 0);
+	color: #fff;
+	border-width: 2px;
+	border-color: white;
+
+}
+
+.map img{
+	width: 100%;
+	height: 55%;
+	padding-bottom: 0px;
+}
+footer{
+	float: left;
+	width: 100%;
+	height: 80px;
+	background-color: #354051;
+	color: #ffffff;
+	text-align: center;
+	padding: 30px;
+
+
+
+}
