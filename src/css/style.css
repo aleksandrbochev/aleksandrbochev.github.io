@@ -2,13 +2,51 @@
 
 body{
 	font-family: Arial, sans-serif;
+}
+
+	
+.preloader{
+	
+	left: 0;
+	top: 0;
+	height: 0%;
+	width: 100%;
+	z-index: 2;
+	transition: 1s all;
+	opacity: 1;
+	visibility: visible;
+}
+
+.loader{
+	width: 75px;
+	height: 75px;
+	border: 10px solid white;
+	border-radius: 50%;
+	border-top-color: blue;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-animation: 1s spin infinite linear;
+	-o-animation: 1s spin infinite linear;
+	animation: 1s spin infinite linear;
 
 }
+@keyframes spin{
+	from{
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+	to{
+		transform: translate(-50%, -50%) rotate(360deg);
+	}
+}
+
 
 nav{
 	width: 100%;
 	height: 60px;
 	background: #344051;
+	position: fixed;
 
 }
 
@@ -18,6 +56,9 @@ nav{
 	line-height: 60px;
 	padding-left: 330px;
 	float: left;
+	-webkit-animation: coming 2s ease;
+	-o-animation: coming 2s ease;
+	animation: coming 2s ease;
 
 }
 
@@ -34,11 +75,16 @@ nav{
 	margin-right: 40px;
 	font-size: 16px;
 	text-transform: uppercase;
+	-webkit-animation: topshift 0.4s ease forwards;
+	-o-animation: topshift 0.4s ease forwards;
+	animation: topshift 0.4s ease forwards;
+	opacity: 0;
+
 }
 
 .main{
 	width: 100%;
-	height: calc(100% - 60px);
+	height: 100%;
 	background: url(../img/boy.png) 90% 100%/auto 85% no-repeat, url(../img/bg.jpg) center/cover no-repeat;
 }
 
@@ -47,6 +93,12 @@ nav{
 	margin: 250px 0px 0px 300px;
 	color: #2c384a;
 	text-align: center;
+	opacity: 0;
+	-webkit-animation: titlemove 0.4s ease forwards;
+	-o-animation: titlemove 0.4s ease forwards;
+	animation: titlemove 0.4s ease forwards;
+	animation-delay: 2.4s;
+
 }
 
 .title_container h1{
@@ -71,15 +123,91 @@ nav{
 	padding: 0px 16px;
 	margin: 50px 14px 0px 14px;
 }
+.menu li a{
+	transition: all 0.1s;
+	color: white;
+	transform: scale(1);
+	display: inline-block;
+}
+.menu li a:visited{
+	color: white;
+}
+.menu li a:hover{
+	color: #d17700;
+	
+}
+.menu li a:active{
+	transform: scale(1.1);
+}
 
-.chapter1{
+.menu li:nth-child(2){
+	animation-delay: 0.4s;
+}
+.menu li:nth-child(3){
+	animation-delay: 0.8s;
+}
+.menu li:nth-child(4){
+	animation-delay: 1.2s;
+}
+.menu li:nth-child(5){
+	animation-delay: 1.6s;
+}
+.menu li:nth-child(6){
+	animation-delay: 2s;
+}
+main{
+	width: 100%;
+	height: 100%;
+}
+
+.title_container input{
+	transition: all 0.2s;
+	transform: scale(1);
+}
+.title_container input:hover{
+	background: #344051;
+	color: white;
+}
+.title_container input:active{
+	transform: scale(1.1);
+}
+
+@keyframes coming{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+@keyframes topshift{
+	from{
+		opacity: 0;
+		margin-top: -80px;
+	}
+	to{
+		opacity: 1;
+		margin-top: 0px;
+	}
+}
+@keyframes titlemove{
+	from{
+		opacity: 0;
+		margin-left: -500px;
+	}
+	to{
+		opacity: 1;
+		margin-left: 404px;
+	}
+}
+.section1{
 	float: left;
 	width: 100%;
 	height: 80%;
 	background: url(../img/man.png) 50% 30%/auto 30% no-repeat local ;
 }
 
-.chapter1 h2{
+.section1 h2{
 	float: left;
 	color: #263244;
 	font-size: 25px;
@@ -87,9 +215,14 @@ nav{
 	font-weight: bold;
 	text-transform: uppercase;
 	margin: 60px 690px;
+	transition: all 0.1s;
+	transform: scale(1);
+}
+.section1 h2:hover{
+	color: #d17700;
 }
 
-.chapter1_container{
+.section1_container{
 	float: left;
 	color: #3f495a;
 	width: 760px;
@@ -106,7 +239,7 @@ nav{
 
 
 
-.download input{
+.section1_container input{
 	height: 40px;
 	text-align: center;
 	border: 2px solid #3f495a;
@@ -115,15 +248,25 @@ nav{
 	color: #6d7682;
 	margin: 20px 300px;
 }
+.section1_container input{
+	transition: all 0.2s;
+	transform: scale(1);
+}
+.section1_container input:hover{
+	background: #344051;
+	color: white;
+}
 
-.chapter2{
+
+.section2{
 	float: left;
 	width: 100%;
 	height: 70%;
 	background: url(../img/bg2.jpg) center/cover no-repeat;
+
 }
 
-.chapter2 h2{
+.section2 h2{
 	float: left;
 	color: #263244;
 	font-size: 25px;
@@ -131,13 +274,33 @@ nav{
 	font-weight: bold;
 	text-transform: uppercase;
 	margin: 60px 660px;
+	transition: all 0.1s;
+	transform: scale(1);
+}
+.section2 h2:hover{
+	color: #d17700;
 }
 
-.chapter2_container{
+.section2_container{
 	float: left;
 	height: 184px;
 	margin: 65px 19%;
 
+}
+
+.section2_container img{
+	transition: all 0.2s;
+	transform: scale(1);
+}
+.section2_container img:hover{
+	transform: scale(1.2);
+}
+.section2_container h3{
+	transition: all 0.2s;
+	transform: scale(1);
+}
+.section2_container h3:hover{
+	transform: scale(1.2);
 }
 
 .block{
@@ -153,24 +316,26 @@ nav{
 
 .block h3{
 	font-size: 15px;
-	padding-top: 5px;
+	padding-top: 0px;
 	font-weight: bold;
 	letter-spacing: 0.5px;
 	color: #d89558;
+	
 }
 
 .block p{
 	padding-top: 5px;
+	
 }
 
-.chapter3{
+.section3{
 	float: left;
 	width: 100%;
 	height: 125%;
 
 }
 
-.chapter3 h2{
+.section3 h2{
 	float: left;
 	color: #263244;
 	font-size: 25px;
@@ -178,20 +343,27 @@ nav{
 	font-weight: bold;
 	text-transform: uppercase;
 	margin: 60px 700px;
+    transition: all 0.1s;
+	transform: scale(1);
 }
 
-.chapter3_container p{
+.section3 h2:hover{
+	color: #d17700;
+}
+.section3_container p{
 	float: left;
 	color: #3f495a;
 	margin-left: 370px;
 	margin-top: 5px;
 }
 
-.chapter3_container img{
+.section3_container img{
 	float: left;
 	margin: 20px 270px;
 	height: 500px;
+	
 }
+
 
 .block1{
 	float: left;
@@ -207,7 +379,7 @@ nav{
 	width: 60%;
 }
 
-.chapter3_container input{
+.section3_container input{
 	float: left;
 	margin: 10px 370px;
 	background-color: #63b5ae;
@@ -216,12 +388,24 @@ nav{
 	border: 0px;
 	color: #ffffff;
 }
-.chapter4{
-	float: left;
+.section3_container input{
+	transition: all 0.2s;
+	transform: scale(1);
+}
+.section3_container input:hover{
+	color: #344051;
+}
+.section3_container input:active{
+	color: #344051;
+	transform: scale(1.1);
+}
+
+.section4{
 	width: 100%;
+	float: left;
 	height: 80%; 
 }
-.chapter4 h2{
+.section4 h2{
 	float: left;
 	color: #1c2534;
 	margin: 50px 660px;
@@ -230,7 +414,7 @@ nav{
 	font-weight: bold;
 }
 
-.chapter4_container{
+.section4_container{
 	float: left;
 	margin: 10px 500px;
 
@@ -264,14 +448,14 @@ select{
 
 }
 
-.chapter5{
+.section5{
 	float: left;
 	width: 100%;
 	height: 70%;
 	background: url(../img/bg3.jpg) center/cover no-repeat;
 	margin-top: 70px;
 }
-.chapter5 h2{
+.section5 h2{
 	float: left;
 	color: #263244;
 	font-size: 25px;
@@ -279,16 +463,20 @@ select{
 	font-weight: bold;
 	text-transform: uppercase;
 	margin: 60px 600px;
+	transition: all 0.1s;
+	transform: scale(1);
 }
-
-.chapter5_container{
+.section5 h2:hover{
+	color: #d17700;
+}
+.section5_container{
 	float: left;
 	height: 184px;
 	margin: 45px 19%;
 
 }
 
-.chapter5_block{
+.section5_block{
 	float: left;
 	font-size: 17px;
 	color: #263244;
@@ -300,7 +488,7 @@ select{
 	font-weight: 520;
 	letter-spacing: 0.5px;
 }
-.chapter5_block li{
+.section5_block li{
 	padding-top: 10px;
 }
 .number{
@@ -308,12 +496,12 @@ select{
 	padding-top: 30px;
 }
 
-.chapter6{
+.section6{
 	float: left;
 	width: 100%;
 	height: 70%;
 }
-.chapter6 h2{
+.section6 h2{
 	float: left;
 	color: #263244;
 	font-size: 25px;
@@ -321,9 +509,14 @@ select{
 	font-weight: bold;
 	text-transform: uppercase;
 	margin: 60px 700px;
+    transition: all 0.1s;
+	transform: scale(1);
+}
+.section6 h2:hover{
+	color: #d17700;
 }
 
-.chapter6_container{
+.section6_container{
 	float: left;
 	margin: 20px 500px;
 	text-align: center;
@@ -334,7 +527,7 @@ img{
 	padding-bottom: 30px;
 }
 	
-.chapter7{
+.section7{
 	float: left;
 	width: 100%;
 	height: 100%;
@@ -342,7 +535,7 @@ img{
 }
 
 
-.chapter7 h2{
+.section7 h2{
 	float: left;
 	color: #ffffff;
 	font-size: 25px;
@@ -350,16 +543,21 @@ img{
 	font-weight: bold;
 	text-transform: uppercase;
 	margin: 60px 650px;
+    transition: all 0.1s;
+	transform: scale(1);
+}
+.section7 h2:hover{
+	color: #d17700;
 }
 
-.chapter7_container{
+.section7_container{
 	float: left;
 	margin: 10px 390px;
 	text-align: center;
 	color: #ffffff;
 }
 
-.chapter7_block{
+.section7_block{
 	float: left;
 	line-height: 16px;
 	font-size: 12px;
@@ -368,6 +566,13 @@ img{
 	text-align: center;
 	padding: 40px;
 	margin-left: 20px;
+}
+.section7_container a{
+	color: white;
+	transform: scale(1);
+}
+.section7_container a:hover{
+	color: #d17700;
 
 }
 
@@ -388,6 +593,11 @@ input{
 .inp{
 	display: inline-flex;
 	padding-top: 5px;
+	transition: all 0.1s;
+	transform: scale(1);
+}
+.inp:active{
+	transform: scale(1.2);
 }
 
 textarea{
@@ -396,7 +606,12 @@ textarea{
 	height: 100px;
 	width: 400px;
 	margin-top: 5px;
+	transition: all 0.1s;
+	transform: scale(1);
 
+}
+textarea:active{
+	transform: scale(1.2);
 }
 
 .inp1{
@@ -409,9 +624,14 @@ textarea{
 	color: #fff;
 	border-width: 2px;
 	border-color: white;
+	transition: all 0.1s;
+	transform: scale(1);
 
 }
-
+.inp1 input:hover{
+	transform: scale(1.1);
+	color: #d17700;
+}
 .map img{
 	width: 100%;
 	height: 55%;
