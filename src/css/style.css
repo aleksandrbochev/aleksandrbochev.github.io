@@ -15,6 +15,7 @@ body{
 	transition: 1s all;
 	opacity: 1;
 	visibility: visible;
+
 }
 
 .loader{
@@ -23,7 +24,7 @@ body{
 	border: 10px solid white;
 	border-radius: 50%;
 	border-top-color: blue;
-	position: absolute;
+	position: fixed;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
